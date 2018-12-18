@@ -27,8 +27,8 @@ def initFrameValues(frame, type="random", options=None):
         sampleSize = options[0] * len(x)
         
         #Create our kriging matrix:
-        #Note here we need to update this so that we're pulling without replacement (choices won't do that)
-        kMat = random.choices(frame, k=sampleSize)
+        #Below is broken, working on it now.
+        kMat = random.sample(frame, k=sampleSize)
         print(kMat)
 
 
