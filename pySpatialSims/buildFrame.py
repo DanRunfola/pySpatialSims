@@ -1,6 +1,6 @@
 import random
 
-def buildFrame(Xlim0, Xlim1, Ylim0, Ylim1, step):
+def buildFrame(Xlim0, Xlim1, Ylim0, Ylim1, step=1):
     frame = []
     for x in range(Xlim0, Xlim1, step):
         for y in range(Ylim0, Ylim1, step):
